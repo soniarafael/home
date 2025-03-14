@@ -9,6 +9,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            text-decoration: none; /* Remove sublinhado de todos os links */
         }
 
         html, body {
@@ -34,32 +35,41 @@
         }
 
         h1 {
-            margin-top: 33vh; /* Adiciona espaçamento do topo */
-            font-family: "Snell Roundhand", cursive; /* Define a nova fonte */
-            font-size: 20px; /* Ajusta o tamanho da fonte */
+            margin-top: 33vh;
+            font-family: "Snell Roundhand", cursive;
+            font-size: 20px;
             color: #627951;
         }
         p {
-             margin-top: 20px;
+            margin-top: 20px;
             margin-bottom: 20px;
-            font-family: "Snell Roundhand", cursive; /* Define a nova fonte */
+            font-family: "Snell Roundhand", cursive;
             color: #7e9a7b;
         }
+
         .buttons {
             margin-top: 20px;
+            display: flex;
+            flex-direction: column; /* Faz os botões ficarem um abaixo do outro */
+            align-items: center; /* Centraliza os botões */
+            gap: 10px; /* Espaçamento entre os botões */
         }
+
         .btn {
-             padding: 10px 20px;
+            display: inline-block;
+            width: 200px; /* Define uma largura fixa para os botões */
+            padding: 10px;
             font-size: 16px;
-            margin: 10px;
             cursor: pointer;
             border: none;
             border-radius: 5px;
             background-color: #e2e8e2;
             color: #3b5110;
+            text-align: center;
         }
+
         .btn:hover {
-            background-color: #e2e8e2;
+            background-color: #d4dbc9;
         }
     </style>
 </head>
@@ -68,6 +78,7 @@
     <p>04.06.2025</p>
     <p>Sónia & Rafael</p>
     <p>Para partilhar os momentos do nosso dia! ❤️</p>
+    <p></p>
     
     <div class="buttons">
         <a href="https://soniarafael.github.io/carregar_foto/" class="btn">Adicionar fotos</a>
