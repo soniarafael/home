@@ -48,7 +48,7 @@
             font-family: "Snell Roundhand", cursive;
             color: white /*#7e9a7b*/;
         }
-		
+
         h5:first-of-type {
             margin-top: 150px; /* Aumente o valor conforme necessário */
         }
@@ -82,12 +82,19 @@
         .location-icon {
             font-size: 50px; /* Tamanho do ícone */
             color: white;
-            margin-top: 30px;
+            margin-top: 100px; /* Aumente a margem superior para abaixar o ícone */
             cursor: pointer;
         }
 
         .location-icon:hover {
             color: #8FBC8F; /* Cor ao passar o mouse */
+        }
+
+        /* Estilo para o texto abaixo do ícone */
+        .location-text {
+            font-size: 18px;
+            color: white;
+            margin-top: 10px; /* Espaçamento entre o ícone e o texto */
         }
     </style>
 </head>
@@ -111,5 +118,8 @@
     <a href="https://maps.app.goo.gl/h6VFCTKcbbGj65i46" target="_blank">
         <i class="fas fa-map-marker-alt location-icon"></i>
     </a>
+    
+    <!-- Texto abaixo do ícone -->
+    <p class="location-text">Quinta da Praia Verde</p>
 </body>
 </html>
