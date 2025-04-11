@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wedding Day</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"> <!-- Font Awesome -->
     <style>
         * {
             margin: 0;
@@ -40,6 +41,7 @@
             font-size: 25px;
             color: white /*#627951*/;
         }
+
         h5 {
             margin-top: 20px;
             margin-bottom: 20px;
@@ -47,10 +49,9 @@
             color: white /*#7e9a7b*/;
         }
 		
-	h5:first-of-type {
-			margin-top: 150px; /* Aumente o valor conforme necessário */
-		}
-
+        h5:first-of-type {
+            margin-top: 150px; /* Aumente o valor conforme necessário */
+        }
 
         .buttons {
             margin-top: 20px;
@@ -76,15 +77,27 @@
         .btn:hover {
             background-color: #d4dbc9;
         }
+
+        /* Estilo para o ícone de localização */
+        .location-icon {
+            font-size: 50px; /* Tamanho do ícone */
+            color: white;
+            margin-top: 30px;
+            cursor: pointer;
+        }
+
+        .location-icon:hover {
+            color: #8FBC8F; /* Cor ao passar o mouse */
+        }
     </style>
 </head>
 <body>
     <h1>Wedding Day</h1>
-     <p></p>
+    <p></p>
     <h5>09.06.2025</h5>
-     <p></p>
+    <p></p>
     <h5>Sónia & Rafael</h5>
-     <p></p>
+    <p></p>
     <h5>Para partilhar os momentos do nosso dia! 🤍</h5>
     <p></p>
     
@@ -93,5 +106,10 @@
         <a href="https://sites.google.com/view/soniarafael/in%C3%ADcio" class="btn">Álbum Casamento</a>
         <a href="https://soniarafael.github.io/wedding/" class="btn">Adicionar áudio</a>
     </div>
+    
+    <!-- Ícone de localização -->
+    <a href="https://maps.app.goo.gl/h6VFCTKcbbGj65i46" target="_blank">
+        <i class="fas fa-map-marker-alt location-icon"></i>
+    </a>
 </body>
 </html>
