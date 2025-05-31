@@ -93,11 +93,11 @@
       cursor: pointer;
       border: none;
       border-radius: 5px;
-      background-color: #e2e8e2; /* cor sólida */
+      background-color: #e2e8e2; /* cor sólida, sem rgba */
       color: #3b5110;
       text-align: center;
-      transition: background 0.3s;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* leve sombra para suavizar */
+      transition: background-color 0.3s ease;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.15); /* sombra suave */
       font-family: Arial, sans-serif !important;
       -webkit-appearance: none;
       -moz-appearance: none;
@@ -106,7 +106,7 @@
     }
     
     .btn:hover {
-      background-color: #d4dbc9; /* tom mais claro no hover */
+      background-color: #d4dbc9;
     }
 
     .location-icon {
