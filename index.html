@@ -51,21 +51,25 @@
     }
 
     .middle-text {
-      position: absolute;
-      top: 260px; /* ⬇️ mais abaixo */
-      left: 50%;
-      transform: translateX(-50%);
-      max-width: 95%; /* ⬅️ mais larga */
-    }
+    position: absolute;
+    top: 260px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    text-align: center;
+  }
 
-    .middle-text h5 {
-      font-size: 20px;
-      line-height: 1.4;
-    }
+  .middle-text h5 {
+    font-size: 20px;
+    line-height: 1.4;
+    color: white;
+  }
 
     .buttons {
       position: absolute;
-      top: 380px; /* ⬇️ mais abaixo */
+      top: 450px; /* ⬇️ mais abaixo */
       left: 50%;
       transform: translateX(-50%);
       display: flex;
