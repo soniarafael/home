@@ -1,133 +1,139 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding Day</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            text-decoration: none;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Day</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+    }
 
-        html, body {
-            height: 100%;
-            overflow: hidden;
-        }
+    html, body {
+      height: 100%;
+      overflow: hidden;
+    }
 
-        body {
-            background-image: url('https://i.imgur.com/XFFoblA.jpeg');
-            background-size: cover;
-            background-position: center center;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            font-family: Arial, sans-serif;
-            color: #8FBC8F;
-            text-align: center;
-            position: relative;
-        }
+    body {
+      background-image: url('https://i.imgur.com/XFFoblA.jpeg');
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      font-family: Arial, sans-serif;
+      color: #8FBC8F;
+      text-align: center;
+      position: relative;
+    }
 
-        h1 {
-            font-family: "Snell Roundhand", cursive;
-            font-size: 25px;
-            color: white;
-            margin-bottom: 10px;
-        }
+    h1 {
+      font-family: "Snell Roundhand", cursive;
+      font-size: 25px;
+      color: white;
+      margin-bottom: 10px;
+    }
 
-        h5 {
-            font-family: "Snell Roundhand", cursive;
-            color: white;
-            font-size: 18px;
-        }
+    h5 {
+      font-family: "Snell Roundhand", cursive;
+      color: white;
+      font-size: 18px;
+    }
 
-        .top-info {
-            position: absolute;
-            top: 30px; /* ⬅️ Mais para cima */
-            left: 50%;
-            transform: translateX(-50%);
-        }
+    .top-info {
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
 
-        .middle-text {
-            position: absolute;
-            top: 180px; /* ⬅️ Mais para baixo */
-            left: 50%;
-            transform: translateX(-50%);
-        }
+    .middle-text {
+      position: absolute;
+      top: 220px; /* ⬅️ Mais para baixo */
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 90%;
+    }
 
-        .buttons {
-            position: absolute;
-            top: 280px; /* ⬅️ A 280px do topo */
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-        }
+    .middle-text h5 {
+      font-size: 20px;
+      line-height: 1.4;
+    }
 
-        .btn {
-            width: 250px;
-            padding: 10px;
-            font-size: 14px;
-            cursor: pointer;
-            border: none;
-            border-radius: 5px;
-            background-color: rgba(226, 232, 226, 0.6);
-            color: #3b5110;
-            text-align: center;
-            transition: background 0.3s;
-        }
+    .buttons {
+      position: absolute;
+      top: 330px; /* ⬅️ Mais para baixo */
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
 
-        .btn:hover {
-            background-color: rgba(212, 219, 201, 0.9);
-        }
+    .btn {
+      width: 250px;
+      padding: 10px;
+      font-size: 14px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: rgba(226, 232, 226, 0.6);
+      color: #3b5110;
+      text-align: center;
+      transition: background 0.3s;
+    }
 
-        .location-icon {
-            position: absolute;
-            bottom: 60px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 40px;
-            color: white;
-            cursor: pointer;
-        }
+    .btn:hover {
+      background-color: rgba(212, 219, 201, 0.9);
+    }
 
-        .location-icon:hover {
-            color: #8FBC8F;
-        }
+    .location-icon {
+      position: absolute;
+      bottom: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 40px;
+      color: white;
+      cursor: pointer;
+    }
 
-        .location-text {
-            position: absolute;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 14px;
-            color: white;
-        }
-    </style>
+    .location-icon:hover {
+      color: #8FBC8F;
+    }
+
+    .location-text {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 14px;
+      color: white;
+    }
+  </style>
 </head>
 <body>
-    <div class="top-info">
-        <h5>Sónia & Rafael</h5>
-        <h5>09.06.2025</h5>
-    </div>
+  <div class="top-info">
+    <h5>Sónia & Rafael</h5>
+    <h5>09.06.2025</h5>
+  </div>
 
-    <div class="middle-text">
-        <h5>Para partilhar os momentos do nosso dia! 🤍</h5>
-    </div>
+  <div class="middle-text">
+    <h5>Para partilhar os momentos do nosso dia! 🤍</h5>
+  </div>
 
-    <div class="buttons">
-        <a href="https://soniarafael.github.io/carregar_foto/" class="btn">Adicionar fotos</a>
-        <a href="https://sites.google.com/view/soniarafael/in%C3%ADcio" class="btn">Álbum Casamento</a>
-        <a href="https://soniarafael.github.io/wedding/" class="btn">Adicionar áudio</a>
-    </div>
+  <div class="buttons">
+    <a href="https://soniarafael.github.io/carregar_foto/" class="btn">Adicionar fotos</a>
+    <a href="https://sites.google.com/view/soniarafael/in%C3%ADcio" class="btn">Álbum Casamento</a>
+    <a href="https://soniarafael.github.io/wedding/" class="btn">Adicionar áudio</a>
+  </div>
 
-    <a href="https://maps.app.goo.gl/h6VFCTKcbbGj65i46" target="_blank">
-        <i class="fas fa-map-marker-alt location-icon"></i>
-    </a>
-    <p class="location-text">Quinta da Praia Verde</p>
+  <a href="https://maps.app.goo.gl/h6VFCTKcbbGj65i46" target="_blank">
+    <i class="fas fa-map-marker-alt location-icon"></i>
+  </a>
+  <p class="location-text">Quinta da Praia Verde</p>
 </body>
 </html>
