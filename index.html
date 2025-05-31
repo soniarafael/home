@@ -48,7 +48,7 @@
     }
 
     h5:first-of-type {
-      font-size: 28px; /* tamanho maior para o primeiro h5 */
+      font-size: 28px;
     }
 
     .top-info {
@@ -73,14 +73,14 @@
       font-size: 18px;
       line-height: 1.4;
       color: white;
-      white-space: nowrap; /* para a frase ficar numa linha só */
+      white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
     }
 
     .buttons {
       position: absolute;
-      top: 440px; /* mais para baixo */
+      top: 440px;
       left: 50%;
       transform: translateX(-50%);
       display: flex;
@@ -96,19 +96,30 @@
       cursor: pointer;
       border: none;
       border-radius: 5px;
-      background-color: rgba(255, 255, 255, 0.6); /* branco semi-transparente */
-      color: #3b5110; /* texto verde escuro */
+      background-color: rgba(255, 255, 255, 0.6);
       text-align: center;
       transition: background 0.3s;
     }
-    
+
     .btn:hover {
-      background-color: rgba(255, 255, 255, 0.9); /* branco quase opaco no hover */
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .btn.fotos {
+      color: #3b5110; /* verde escuro */
+    }
+
+    .btn.album {
+      color: black;
+    }
+
+    .btn.audio {
+      color: gold;
     }
 
     .location-icon {
       position: absolute;
-      bottom: 40px; /* mais para baixo */
+      bottom: 40px;
       left: 50%;
       transform: translateX(-50%);
       font-size: 30px;
@@ -122,7 +133,7 @@
 
     .location-text {
       position: absolute;
-      bottom: 15px; /* menos espaço */
+      bottom: 15px;
       left: 50%;
       transform: translateX(-50%);
       font-size: 14px;
@@ -141,13 +152,9 @@
   </div>
 
   <div class="buttons">
-    <a href="https://soniarafael.github.io/carregar_foto/" class="btn"
-      >Adicionar fotos</a
-    >
-    <a href="https://sites.google.com/view/soniarafael/in%C3%ADcio" class="btn"
-      >Álbum Casamento</a
-    >
-    <a href="https://soniarafael.github.io/wedding/" class="btn">Adicionar áudio</a>
+    <a href="https://soniarafael.github.io/carregar_foto/" class="btn fotos">Adicionar fotos</a>
+    <a href="https://sites.google.com/view/soniarafael/in%C3%ADcio" class="btn album">Álbum Casamento</a>
+    <a href="https://soniarafael.github.io/wedding/" class="btn audio">Adicionar áudio</a>
   </div>
 
   <a href="https://maps.app.goo.gl/h6VFCTKcbbGj65i46" target="_blank">
