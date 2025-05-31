@@ -2,7 +2,7 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Wedding Day</title>
   <link
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -23,7 +23,7 @@
     }
 
     body {
-      background-image: url("https://i.imgur.com/XFFoblA.jpeg");
+      background-image: url('https://i.imgur.com/XFFoblA.jpeg');
       background-size: cover;
       background-position: center center;
       background-attachment: fixed;
@@ -35,14 +35,14 @@
     }
 
     h1 {
-      font-family: "Snell Roundhand", cursive;
+      font-family: 'Snell Roundhand', cursive;
       font-size: 25px;
       color: white;
       margin-bottom: 10px;
     }
 
     h5 {
-      font-family: "Snell Roundhand", cursive;
+      font-family: 'Snell Roundhand', cursive;
       color: white;
       font-size: 20px;
     }
@@ -73,11 +73,14 @@
       font-size: 18px;
       line-height: 1.4;
       color: white;
+      white-space: nowrap; /* para a frase ficar numa linha só */
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .buttons {
       position: absolute;
-      top: 430px; /* ⬇️ mais abaixo */
+      top: 430px; /* mais para baixo */
       left: 50%;
       transform: translateX(-50%);
       display: flex;
@@ -93,20 +96,14 @@
       cursor: pointer;
       border: none;
       border-radius: 5px;
-      background-color: #c7d1b1; /* verde claro suave */
-      color: #3b5110;
+      background-color: #ffffff; /* fundo branco sólido */
+      color: #3b5110; /* texto verde escuro */
       text-align: center;
-      transition: background-color 0.3s ease;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.15); /* sombra suave */
-      font-family: Arial, sans-serif !important;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-      outline: none;
+      transition: background 0.3s;
     }
-    
+
     .btn:hover {
-      background-color: #d4dbc9;
+      background-color: #e6e6e6; /* leve cinza no hover */
     }
 
     .location-icon {
