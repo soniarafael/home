@@ -26,11 +26,8 @@
             background-repeat: no-repeat;
             font-family: Arial, sans-serif;
             color: #8FBC8F;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             text-align: center;
+            position: relative;
         }
 
         h1 {
@@ -43,12 +40,28 @@
         h5 {
             font-family: "Snell Roundhand", cursive;
             color: white;
-            margin: 5px 0;
-            font-size: 18px; /* ⬅️ Aumentado */
+            font-size: 18px;
+        }
+
+        .top-info {
+            position: absolute;
+            top: 30px; /* ⬅️ Mais para cima */
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .middle-text {
+            position: absolute;
+            top: 180px; /* ⬅️ Mais para baixo */
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         .buttons {
-            margin-top: 30px;
+            position: absolute;
+            top: 280px; /* ⬅️ A 280px do topo */
+            left: 50%;
+            transform: translateX(-50%);
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -73,9 +86,12 @@
         }
 
         .location-icon {
+            position: absolute;
+            bottom: 60px;
+            left: 50%;
+            transform: translateX(-50%);
             font-size: 40px;
             color: white;
-            margin-top: 40px;
             cursor: pointer;
         }
 
@@ -84,19 +100,24 @@
         }
 
         .location-text {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
             font-size: 14px;
             color: white;
-            margin-top: 10px;
         }
     </style>
 </head>
 <body>
-    <h1></h1>
-    <h5>Sónia & Rafael</h5>
-    <h5>09.06.2025</h5>
+    <div class="top-info">
+        <h5>Sónia & Rafael</h5>
+        <h5>09.06.2025</h5>
+    </div>
 
-    <!-- H5 movido para aqui -->
-    <h5>Para partilhar os momentos do nosso dia! 🤍</h5>
+    <div class="middle-text">
+        <h5>Para partilhar os momentos do nosso dia! 🤍</h5>
+    </div>
 
     <div class="buttons">
         <a href="https://soniarafael.github.io/carregar_foto/" class="btn">Adicionar fotos</a>
